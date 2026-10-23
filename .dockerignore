@@ -1,0 +1,7 @@
+.git
+.gitignore
+.env
+db_data
+postgres_data
+*.bak*
+README.md

@@ -1,0 +1,22 @@
+# Secrets / local config
+.env
+!.env.example
+
+# Database data (bind mounts legacy + dumps)
+db_data/
+postgres_data/
+*.sql
+*.dump
+*.bak
+*.bak.*
+
+# Backups created by old setup.sh
+*.bak.20*
+
+# Docker / OS noise
+.docker/
+.DS_Store
+Thumbs.db
+
+# PHP
+vendor/
