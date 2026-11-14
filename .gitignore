@@ -20,3 +20,6 @@ Thumbs.db
 
 # PHP
 vendor/
+
+# Nginx
+www/*
