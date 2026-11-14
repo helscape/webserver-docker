@@ -38,4 +38,6 @@ setup.sh             # bootstrap .env + `docker compose up` (never overwrites so
 - `www/index.php` reads credentials via `getenv()` (wired through `env_file: [.env]`
   on the `php` service) — no hardcoded passwords in source.
 - Default ports: web `${WEB_HTTP_PORT:-8080}`, MariaDB `3306`, Postgres `5432`.
+- All published ports are bound to `127.0.0.1`, so the stack is reachable from the
+  local machine only — not from other hosts on the network.
 - First run builds the PHP image; subsequent starts are fast.
